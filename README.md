@@ -1,7 +1,7 @@
-#Node.js and Express Tutorial from The Net Ninja Concluded 
+# Node.js and Express Tutorial from The Net Ninja Concluded 
 Here you can find the final result of a working example of Node.js, Express.js and EJS extended with body-parser.
 
-##The final code is whatever was presented on tutotial plus had 2 mods from: 
+## The final code is whatever was presented on tutotial plus had 2 mods from: 
 
 1 -  in the Controller, inside the res function 'res.json(data);'  you need to pass some info but you don't need to pass the data as it's never used: 'res.json(true);' works as well. When you reach AJAX again with successful message it will never use that data and will just tell the web browser to refresh which in the end means to request GET 'todo' and that will get the data from DB again refreshing the data object.
 
